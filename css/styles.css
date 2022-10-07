@@ -108,12 +108,12 @@ body {
   color: var(--accent-color-one);
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item:hover,
 .nav-item:focus {
   color: var(--accent-color-two);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav .current {
@@ -150,12 +150,12 @@ body {
   padding-bottom: 32px;
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-item:hover,
 .contacts-item:focus {
   color: var(--accent-color-two);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list-item {
@@ -224,12 +224,12 @@ body {
   margin: 0 auto;
   min-width: 216px;
   height: 50px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--hover-focus-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -397,6 +397,8 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--clients-logo-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link-icon {
@@ -407,8 +409,6 @@ body {
 .about-team-link:focus {
   background-color: var(--accent-color-two);
   color: var(--main-color-light);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-title {
@@ -439,6 +439,8 @@ body {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-logo {
@@ -449,8 +451,6 @@ body {
 .clients-item:focus {
   color: var(--accent-color-two);
   border: 1px solid var(--accent-color-two);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Footer */
@@ -474,6 +474,7 @@ body {
   font-style: normal;
   margin-bottom: 9px;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact-email,
@@ -484,6 +485,7 @@ body {
   color: var(--footer-contact-color);
   font-style: normal;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address:hover,
@@ -493,7 +495,6 @@ body {
 .footer-contact-tel:hover,
 .footer-contact-tel:focus {
   color: var(--accent-color-two);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact-email {
@@ -539,6 +540,7 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--main-color-light);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-logo {
@@ -548,7 +550,6 @@ body {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color-two);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio */
@@ -572,6 +573,11 @@ body {
   border-radius: 4px;
   border: transparent;
   padding: 6px 22px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -582,11 +588,6 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: transparent;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-card {
@@ -624,13 +625,13 @@ body {
 
 .filter-result-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-result-link:hover,
 .filter-result-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-result-link:hover .filter-result-text {
