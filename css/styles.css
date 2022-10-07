@@ -222,6 +222,7 @@ body {
   background-color: var(--accent-color-two);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   display: block;
   margin: 0 auto;
   min-width: 216px;
