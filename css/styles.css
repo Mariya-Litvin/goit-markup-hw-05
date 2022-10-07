@@ -710,6 +710,12 @@ body {
   padding: 0;
   background: var(--main-color-light);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-button:hover,
+.modal-batton:focus {
+  color: var(--accent-color-two);
 }
 
 .backdrop.is-hidden {
