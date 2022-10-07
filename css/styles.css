@@ -116,7 +116,21 @@ body {
 }
 
 .nav .current {
+  position: relative;
   color: var(--accent-color-two);
+}
+
+.current::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: -1px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: var(--accent-color-two);
+  border-radius: 2px;
 }
 
 .contacts {
